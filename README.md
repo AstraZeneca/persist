@@ -19,19 +19,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -209,19 +196,6 @@ metrics.iloc[:10,:]
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -339,7 +313,7 @@ plot_many_genes(df, list(metrics.gene)[:20])
 
 
     
-![png](output_11_0.png)
+![png](README_files/kpmp_svgs.png)
     
 
 
@@ -356,7 +330,7 @@ plot_many_genes(df, ['PODXL', 'PTGDS', 'IGFBP5', 'TGFBR2', 'IFI27', 'HTRA1'], nu
 
 
     
-![png](output_15_0.png)
+![png](README_files/podxl_svgs.png)
     
 
 
