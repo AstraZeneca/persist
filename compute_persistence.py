@@ -14,7 +14,7 @@ from post_ph_functions import find_knee
 
 def run_persistence(data, p=2, m=0.1, mesh_type="hexagonal", sensitivity=1, 
                     metrics_storage_location=None, diagrams_storage_location=None, log_storage_location=None, 
-                    notes=None, return_metrics=True, return_diagrams=True):
+                    notes=None, return_metrics=True, return_diagrams=False):
     
     """ Takes in expression and co-ordinate data for a set of wells from a single sample and computes a CoSS score for each gene. 
         Optionally stores metrics (norms, ratios, ranks, and SVG calls) and diagrams in user-specified locations.
