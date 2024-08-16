@@ -194,7 +194,7 @@ Let's compute CoSS scores for all the genes in this sample.
 
 ```python
 from compute_persistence import run_persistence
-metrics, diagrams = run_persistence(df)
+metrics = run_persistence(df)
 ```
 
 Let's take a look at those genes with the highest CoSS scores
@@ -229,7 +229,7 @@ metrics.iloc[:10,:]
       <th>gene</th>
       <th>CoSS</th>
       <th>ratio</th>
-      <th>rank</th>
+      <th>gene_rank</th>
       <th>possible_artefact</th>
       <th>svg</th>
     </tr>
@@ -238,8 +238,8 @@ metrics.iloc[:10,:]
     <tr>
       <th>16443</th>
       <td>IGLC1</td>
-      <td>0.141047</td>
-      <td>0.615050</td>
+      <td>0.141620</td>
+      <td>0.651803</td>
       <td>1.0</td>
       <td>No</td>
       <td>Yes</td>
@@ -247,62 +247,62 @@ metrics.iloc[:10,:]
     <tr>
       <th>16483</th>
       <td>IGHG1</td>
-      <td>0.111424</td>
-      <td>0.438202</td>
+      <td>0.114255</td>
+      <td>0.467722</td>
       <td>2.0</td>
-      <td>No</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <th>10798</th>
-      <td>DEFB1</td>
-      <td>0.104846</td>
-      <td>0.370431</td>
-      <td>3.0</td>
-      <td>No</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <th>12467</th>
-      <td>CCL19</td>
-      <td>0.103292</td>
-      <td>0.588332</td>
-      <td>4.0</td>
       <td>No</td>
       <td>Yes</td>
     </tr>
     <tr>
       <th>5372</th>
       <td>MT1G</td>
-      <td>0.103063</td>
-      <td>0.386810</td>
+      <td>0.105850</td>
+      <td>0.335738</td>
+      <td>3.0</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <th>10798</th>
+      <td>DEFB1</td>
+      <td>0.103534</td>
+      <td>0.376595</td>
+      <td>4.0</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <th>12467</th>
+      <td>CCL19</td>
+      <td>0.101025</td>
+      <td>0.649770</td>
       <td>5.0</td>
       <td>No</td>
       <td>Yes</td>
     </tr>
     <tr>
-      <th>11812</th>
-      <td>UMOD</td>
-      <td>0.099496</td>
-      <td>0.327315</td>
+      <th>22516</th>
+      <td>C17orf113</td>
+      <td>0.098336</td>
+      <td>0.574433</td>
       <td>6.0</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <th>6980</th>
+      <td>ALDOB</td>
+      <td>0.096201</td>
+      <td>0.271491</td>
+      <td>7.0</td>
       <td>No</td>
       <td>Yes</td>
     </tr>
     <tr>
       <th>5750</th>
       <td>PODXL</td>
-      <td>0.095723</td>
-      <td>0.367521</td>
-      <td>7.0</td>
-      <td>No</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <th>3288</th>
-      <td>PTGDS</td>
-      <td>0.094730</td>
-      <td>0.406293</td>
+      <td>0.095475</td>
+      <td>0.327815</td>
       <td>8.0</td>
       <td>No</td>
       <td>Yes</td>
@@ -310,17 +310,17 @@ metrics.iloc[:10,:]
     <tr>
       <th>1102</th>
       <td>SLC12A3</td>
-      <td>0.094595</td>
-      <td>0.329399</td>
+      <td>0.095306</td>
+      <td>0.352575</td>
       <td>9.0</td>
       <td>No</td>
       <td>Yes</td>
     </tr>
     <tr>
-      <th>6980</th>
-      <td>ALDOB</td>
-      <td>0.093952</td>
-      <td>0.275843</td>
+      <th>11812</th>
+      <td>UMOD</td>
+      <td>0.094709</td>
+      <td>0.401716</td>
       <td>10.0</td>
       <td>No</td>
       <td>Yes</td>
@@ -359,3 +359,10 @@ plot_many_genes(df, ['PODXL', 'PTGDS', 'IGFBP5', 'TGFBR2', 'IFI27', 'HTRA1'], nu
 ![png](output_15_0.png)
     
 
+
+# References
+
+[1] Blue B Lake et al. “An atlas of healthy and injured cell states and niches in the human kidney”. In: Nature
+619.7970 (2023), pp. 585–594.
+
+[2] PersiST paper (not yet published)
