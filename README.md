@@ -176,7 +176,7 @@ df.head()
 
 This is a pandas DataFrame where the first two columns correspond to the well co-ordinates, and the remaining columns contain the expression of each gene. This is the format PersiST expects spatial transcriptomics data to come in.
 
-Let's compute CoSS scores for all the genes in this sample.
+Let's compute CoSS scores for all the genes in this sample (this will take about 10 - 20 minutes).
 
 
 ```python
